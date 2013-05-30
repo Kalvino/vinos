@@ -5376,3 +5376,350 @@ ActionController::RoutingError (No route matches [GET] "/uploads/idea/picture/3/
 
 
   Rendered /home/calvino/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateIdeas (20130528202017)
+Migrating to CreateComments (20130529020509)
+Migrating to DeviseCreateUsers (20130529031346)
+Migrating to CreateAttendees (20130530005035)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "attendees" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "twitter_handle" varchar(255), "bio" text, "address" text, "picture" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130530005035')[0m
+  [1m[35m (163.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/attendees" for 127.0.0.1 at 2013-05-30 03:51:29 +0300
+Processing by AttendeesController#index as HTML
+  [1m[36mAttendee Load (0.1ms)[0m  [1mSELECT "attendees".* FROM "attendees" [0m
+  Rendered attendees/index.html.erb within layouts/application (4.1ms)
+Compiled attendees.css  (47ms)  (pid 17017)
+Compiled application.css  (57ms)  (pid 17017)
+Compiled attendees.js  (509ms)  (pid 17017)
+Compiled application.js  (520ms)  (pid 17017)
+Completed 200 OK in 779ms (Views: 722.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-30 03:51:30 +0300
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/attendees.css?body=1" for 127.0.0.1 at 2013-05-30 03:51:30 +0300
+Served asset /attendees.css - 200 OK (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-05-30 03:51:30 +0300
+Served asset /comments.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2013-05-30 03:51:30 +0300
+Served asset /ideas.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-30 03:51:30 +0300
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-30 03:51:30 +0300
+Served asset /jquery.js - 304 Not Modified (43ms)
+
+
+Started GET "/assets/attendees.js?body=1" for 127.0.0.1 at 2013-05-30 03:51:30 +0300
+Served asset /attendees.js - 200 OK (2ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-05-30 03:51:30 +0300
+Served asset /comments.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-30 03:51:30 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2013-05-30 03:51:30 +0300
+Served asset /ideas.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-30 03:51:30 +0300
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/attendees" for 127.0.0.1 at 2013-05-30 04:05:24 +0300
+Processing by AttendeesController#index as HTML
+  [1m[35mAttendee Load (0.2ms)[0m  SELECT "attendees".* FROM "attendees" 
+  Rendered attendees/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 91ms (Views: 87.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-30 04:05:25 +0300
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/attendees.css?body=1" for 127.0.0.1 at 2013-05-30 04:05:25 +0300
+Served asset /attendees.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-30 04:05:25 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2013-05-30 04:05:25 +0300
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-05-30 04:05:25 +0300
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-30 04:05:25 +0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-30 04:05:25 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attendees.js?body=1" for 127.0.0.1 at 2013-05-30 04:05:25 +0300
+Served asset /attendees.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2013-05-30 04:05:25 +0300
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-05-30 04:05:25 +0300
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-30 04:05:25 +0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/attendees/new" for 127.0.0.1 at 2013-05-30 04:05:36 +0300
+Processing by AttendeesController#new as HTML
+  Rendered attendees/_form.html.erb (38.8ms)
+  Rendered attendees/new.html.erb within layouts/application (54.8ms)
+Completed 200 OK in 182ms (Views: 171.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-30 04:05:36 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/attendees.css?body=1" for 127.0.0.1 at 2013-05-30 04:05:36 +0300
+Served asset /attendees.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-30 04:05:36 +0300
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-30 04:05:36 +0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2013-05-30 04:05:36 +0300
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-05-30 04:05:36 +0300
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-30 04:05:36 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-30 04:05:36 +0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/attendees.js?body=1" for 127.0.0.1 at 2013-05-30 04:05:36 +0300
+Served asset /attendees.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-05-30 04:05:36 +0300
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2013-05-30 04:05:36 +0300
+Served asset /ideas.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (31.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateIdeas (20130528202017)
+Migrating to CreateComments (20130529020509)
+Migrating to DeviseCreateUsers (20130529031346)
+Migrating to CreateAttendees (20130530005035)
+Migrating to AddLatitudeAndLongitudeToAttendee (20130530010914)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "attendees" ADD "latitude" float
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "attendees" ADD "longitude" float[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130530010914')
+  [1m[36m (127.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/attendees/new" for 127.0.0.1 at 2013-05-30 04:16:15 +0300
+Processing by AttendeesController#new as HTML
+  Rendered attendees/_form.html.erb (13.2ms)
+  Rendered attendees/new.html.erb within layouts/application (22.7ms)
+Compiled gmaps4rails.css  (0ms)  (pid 17886)
+Compiled application.css  (40ms)  (pid 17886)
+Compiled gmaps4rails/gmaps4rails.base.js  (443ms)  (pid 17886)
+Compiled gmaps4rails/gmaps4rails.bing.js  (284ms)  (pid 17886)
+Compiled gmaps4rails/gmaps4rails.googlemaps.js  (382ms)  (pid 17886)
+Compiled gmaps4rails/gmaps4rails.mapquest.js  (272ms)  (pid 17886)
+Compiled gmaps4rails/gmaps4rails.openlayers.js  (327ms)  (pid 17886)
+Compiled application.js  (1753ms)  (pid 17886)
+Completed 200 OK in 2144ms (Views: 2039.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-30 04:16:17 +0300
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/attendees.css?body=1" for 127.0.0.1 at 2013-05-30 04:16:17 +0300
+Served asset /attendees.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-05-30 04:16:17 +0300
+Served asset /comments.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2013-05-30 04:16:17 +0300
+Served asset /ideas.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps4rails.css?body=1" for 127.0.0.1 at 2013-05-30 04:16:17 +0300
+Served asset /gmaps4rails.css - 200 OK (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-30 04:16:17 +0300
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:17 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:17 +0300
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:17 +0300
+Served asset /comments.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/attendees.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:17 +0300
+Served asset /attendees.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.base.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:17 +0300
+Served asset /gmaps4rails/gmaps4rails.base.js - 200 OK (2ms)
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.bing.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:17 +0300
+Served asset /gmaps4rails/gmaps4rails.bing.js - 200 OK (2ms)
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.googlemaps.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:17 +0300
+Served asset /gmaps4rails/gmaps4rails.googlemaps.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.mapquest.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:17 +0300
+Served asset /gmaps4rails/gmaps4rails.mapquest.js - 200 OK (2ms)
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.openlayers.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:17 +0300
+Served asset /gmaps4rails/gmaps4rails.openlayers.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:17 +0300
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:17 +0300
+Served asset /ideas.js - 304 Not Modified (2ms)
+
+
+Started GET "/attendees" for 127.0.0.1 at 2013-05-30 04:16:49 +0300
+Processing by AttendeesController#index as HTML
+  [1m[36mAttendee Load (0.2ms)[0m  [1mSELECT "attendees".* FROM "attendees" [0m
+  Rendered /home/calvino/.rvm/gems/ruby-1.9.3-p392/gems/gmaps4rails-1.5.6/app/views/gmaps4rails/_gmaps4rails.html.erb (2.9ms)
+  Rendered attendees/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 178ms (Views: 175.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-30 04:16:49 +0300
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/attendees.css?body=1" for 127.0.0.1 at 2013-05-30 04:16:49 +0300
+Served asset /attendees.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-30 04:16:49 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps4rails.css?body=1" for 127.0.0.1 at 2013-05-30 04:16:49 +0300
+Served asset /gmaps4rails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:49 +0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at 2013-05-30 04:16:49 +0300
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-05-30 04:16:49 +0300
+Served asset /comments.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:49 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/attendees.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:49 +0300
+Served asset /attendees.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.bing.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:49 +0300
+Served asset /gmaps4rails/gmaps4rails.bing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:49 +0300
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.base.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:49 +0300
+Served asset /gmaps4rails/gmaps4rails.base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.googlemaps.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:49 +0300
+Served asset /gmaps4rails/gmaps4rails.googlemaps.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.mapquest.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:49 +0300
+Served asset /gmaps4rails/gmaps4rails.mapquest.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps4rails/gmaps4rails.openlayers.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:49 +0300
+Served asset /gmaps4rails/gmaps4rails.openlayers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:49 +0300
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-30 04:16:49 +0300
+Served asset /application.js - 304 Not Modified (1ms)

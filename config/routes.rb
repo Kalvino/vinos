@@ -1,4 +1,7 @@
 Railsgirls::Application.routes.draw do
+  resources :attendees
+
+
   devise_for :users
 
   resources :comments
