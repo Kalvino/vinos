@@ -16,7 +16,7 @@
       <ul class="nav nav-tabs">
         <li class="active"><a href="/ideas">Ideas</a></li>
         <li ><%= link_to 'New Idea', new_idea_path %></li>
-        <li class="#"><a href="/attendees">Map</a></li>
+        <li class="#"><a href="/attendees">Attendance</a></li>
 
       </ul>
       <p class="navbar-text pull-right">

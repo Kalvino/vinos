@@ -10,7 +10,7 @@ gem 'carrierwave'
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'mini_magick'
-
+gem 'griddler'
 gem 'foreigner'
 gem 'devise'
 

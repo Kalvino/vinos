@@ -53,7 +53,11 @@ GEM
       activerecord (>= 3.0.0)
     geocoder (1.1.8)
     gmaps4rails (1.5.6)
+    griddler (0.5.0)
+      htmlentities
+      rails (>= 3.2.0)
     hike (1.2.2)
+    htmlentities (4.3.1)
     i18n (0.6.1)
     journey (1.0.4)
     jquery-rails (2.2.1)
@@ -128,6 +132,7 @@ DEPENDENCIES
   foreigner
   geocoder
   gmaps4rails
+  griddler
   jquery-rails
   mini_magick
   rails (= 3.2.13)
